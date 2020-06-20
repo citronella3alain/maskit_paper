@@ -5,6 +5,13 @@
 \usepackage{xcolor}
 \usepackage{caption}
 \usepackage{listings}
+\lstset{
+  basicstyle=\ttfamily,
+  columns=fullflexible,
+  frame=single,
+  breaklines=true,
+  postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space},
+}
 \PassOptionsToPackage{hyphens}{url}\usepackage{hyperref}
 
 \date{}
@@ -51,7 +58,7 @@ In the past several months, several organizations, for example Didi Chuxing\foot
 
 % Computer vision for mask detection
 % Computer vision for identifying mask type
-\subsection{Meet \textit{Maskit}.}
+\subsection{Our Solution}
 Maskit 
 %Google search revealed trained Tensorflow models that recognized human faces. Hans had experience with TF. Allen had experience working with R Pis and servo controls blabla. Combined forces to bring this product together.
 %They've come up with prototype that consists of a Rpi and a server. The Rpi is connected to Camera module and servo. It takes pictures at intervals and sends to server as POST request. Server processes pictures with TF model and identifies human faces as masked or unmasked. Then, sends this as response to POST request. If all people identified are wearing a mask, then the raspberry pi activates a welcome flag. Else, people denied entry.
@@ -62,11 +69,7 @@ Maskit
 \subsection{Setting up the server}
 
 \subsection{Running it on R Pi}
-\noindent\fbox{%
-    \parbox{\textwidth}{%
 \lstinputlisting[language=Python]{upload_img_post.py}
-    }%
-}
 The raspberry pi is 
 
 \section{Difficulties and Challenges}
