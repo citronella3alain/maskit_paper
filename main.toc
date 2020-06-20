@@ -1,0 +1,13 @@
+\contentsline {section}{\numberline {I}Introduction}{2}%
+\contentsline {subsection}{\numberline {\mbox {I-A}}Code Source}{2}%
+\contentsline {section}{\numberline {II}Purpose \& Motivation}{2}%
+\contentsline {subsection}{\numberline {\mbox {II-A}}Previous Work on Mask Identification with Computer Vision}{2}%
+\contentsline {subsection}{\numberline {\mbox {II-B}}What is \textit {Maskit}.}{3}%
+\contentsline {section}{\numberline {III}Step by Step Usage Instructions}{3}%
+\contentsline {subsection}{\numberline {\mbox {III-A}}Setting up the server}{3}%
+\contentsline {subsection}{\numberline {\mbox {III-B}}Running it on R Pi}{3}%
+\contentsline {section}{\numberline {IV}Difficulties and Challenges}{3}%
+\contentsline {section}{\numberline {V}Market Evaluation}{3}%
+\contentsline {section}{\numberline {VI}Suggested Improvements}{3}%
+\contentsline {section}{\numberline {VII}Conclusion}{3}%
+\contentsline {section}{References}{3}%
