@@ -27,9 +27,14 @@ The COVID-19 pandemic has led to, at the time of this writing, almost half a mil
 % Video of Costco customer refusing to wear a mask. Customers like this are selfish and endanger other people's safety. Even worse, store employees have to personally go escort the person out--who knows how many people this person could infect in that time period? Better, have a computer analyze people automatically: computers can't get infected with COVID and now store employees aren't putting their lives at risk thanks to selfish bass turds.
 % This inspired us to think about creating such a system. 
 \subsection{Previous Work}
+In the past several months there has been a significant amount of work in the development of neural network models capable of accurately recognizing masks including the multi platform (Keras, Tensorflow, and Caffe) pre-trained models of  (https://github.com/didi/maskdetection) and (https://github.com/AIZOOTech/FaceMaskDetection). Both mask detection models are highly accurate with at least 98\% mask detection rate in most scenarios including multi-person mask recognition. The AIZOO model which we used consists of 24 convolutional layers and was trained on approximately 8000 images from WIDER Face and MAFA datasets. 
+
+
+
 % Computer vision for mask detection
 % Computer vision for identifying mask type
 \subsection{What is \textit{Maskit}.}
+Maskit 
 %Google search revealed trained Tensorflow models that recognized human faces. Hans had experience with TF. Allen had experience working with R Pis and servo controls blabla. Combined forces to bring this product together.
 %They've come up with prototype that consists of a Rpi and a server. The Rpi is connected to Camera module and servo. It takes pictures at intervals and sends to server as POST request. Server processes pictures with TF model and identifies human faces as masked or unmasked. Then, sends this as response to POST request. If all people identified are wearing a mask, then the raspberry pi activates a welcome flag. Else, people denied entry.
 %In model, we have welcome flag, but this can be generalized to any motor, e.g. sliding doors at supermarkets, bolts for regular doors, etc.
@@ -37,11 +42,19 @@ The COVID-19 pandemic has led to, at the time of this writing, almost half a mil
 
 \section{Step by Step Usage Instructions}
 \subsection{Setting up the server}
+
 \subsection{Running it on R Pi}
+The raspberry pi is 
+
 \section{Difficulties and Challenges}
+We faced many challenges during the completion of the project. We tried to do all the image processing on the raspberry pi however the pi, unfortunately, did not have either the necessary speed or space to handle the complicated image processing in OpenCV and Tensorflow. Therefore, we had to design an HTTP server using python to send the image to a Linux computer where the image is processed. Finding the right model for mask detection was also difficult. We tried several different frameworks before finding an efficient Tensorflow mask detection model from AIZOO. Remote work also proved difficult especially for a hardware project where only one of us could see the immediate results.
 \section{Market Evaluation}
+MaskIt has several market application. MaskIt could be used as an artificial bouncing mechanism to ensure that people use masks in public places. Large scale mask detection could also be useful in epidemiological and policy research. 
 \section{Suggested Improvements}
+MaskIt needs to be fully evaluated in larger public situations. If it is going to be useful in public places 
 \section{Conclusion}
+In conclusion, MaskIT has significant potential in research and commercial settings during the COVID pandemic. Given the lack of curret data on mask usage in practice and the importance of mask in the current public health it is important to create automated systems to tack account of mask usage. Some building may need automated gate systems to scan mask usage while universities will need to monitor the percentage of mask compliance on campuses. Systems like MaskIT will be of increasing public importance in the coming months. 
+
 \bibliographystyle{plain}
 \bibliography{citations}
 
