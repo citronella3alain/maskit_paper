@@ -3,6 +3,9 @@
 \usepackage{graphicx}
 \usepackage{textcomp}
 \usepackage{xcolor}
+\usepackage{caption}
+\usepackage{listings}
+\PassOptionsToPackage{hyphens}{url}\usepackage{hyperref}
 
 \date{}
 
@@ -22,8 +25,18 @@
 \section{Introduction}
 The COVID-19 pandemic has led to, at the time of this writing, almost half a million deaths, the worst global recession since the Great Depression, and school closures that have affected nearly all of the world's student population. Although reopening efforts have been underway in many parts of the world, their results have been mixed and it is often instead in citizens' own hands to protect themselves from this virus through means such as social distancing, frequent handwashing, and mask wearing. Although the United States Centers for Disease Control and Prevention (CDC) has issued recommendations for citizens to wear masks to reduce exposure to the virus, the choice to wear a mask has unfortunately evolved to become a political question too\cite{brandon_2020, vigdor_2020}. Apart from CDC and World Health Organization (WHO) guidelines to wear facial coverings, i.e. masks, in this article we will not discuss the merits of face coverings; this knowledge is assumed. Instead, we propose, describe, and demonstrate \textit{Maskit}, a computer vision and robotics system that keeps business owners and other ordinary citizens safe by blocking people who fail to wear a mask while letting people who do through entrances.
 \subsection{Code Source}
-% insert github link here
+Our work is found at \url{https://github.com/hansgundlach/FaceMaskDetectionRasPi}. It is based on earlier an earlier repository by AIZoo Tech\footnote{\url{https://github.com/AIZOOTech/FaceMaskDetection}}. We thank AIZoo Tech for releasing their models to the public with the MIT License. Throughout this paper, we detail our original contributions on top of AIZoo Tech's technology to enhance public safety during a worldwide pandemic using computer vision and robotics.
 \section{Purpose \& Motivation}
+\subsection{Meet the Team}
+\begin{figure}[h!]
+\centering
+\begin{tabular}{ll}
+\includegraphics[scale=.25]{mao.jpg}
+\includegraphics[scale=.25]{mao.jpg} % replace with Hans
+\end{tabular}
+\captionsetup{labelformat=empty}
+\caption{The team: Allen to the left, Hans to the right}
+\end{figure}
 % insert personal bios and anecdotes here:
 We are both undergraduate students at the University of California, Berkeley. Allen is a Computer Science major who is primarily interested in Natural Language Processing
 % Allen is CS major at UCB and Hans is math + physics. They met at International House. Little did they know that semester would be so abruptly cut off by a pandemic. (Detail brutal dining conditions at I house.) Shock and horror at news coming in about so much death.
@@ -38,7 +51,7 @@ In the past several months, several organizations, for example Didi Chuxing\foot
 
 % Computer vision for mask detection
 % Computer vision for identifying mask type
-\subsection{What is \textit{Maskit}.}
+\subsection{Meet \textit{Maskit}.}
 Maskit 
 %Google search revealed trained Tensorflow models that recognized human faces. Hans had experience with TF. Allen had experience working with R Pis and servo controls blabla. Combined forces to bring this product together.
 %They've come up with prototype that consists of a Rpi and a server. The Rpi is connected to Camera module and servo. It takes pictures at intervals and sends to server as POST request. Server processes pictures with TF model and identifies human faces as masked or unmasked. Then, sends this as response to POST request. If all people identified are wearing a mask, then the raspberry pi activates a welcome flag. Else, people denied entry.
@@ -49,6 +62,11 @@ Maskit
 \subsection{Setting up the server}
 
 \subsection{Running it on R Pi}
+\noindent\fbox{%
+    \parbox{\textwidth}{%
+\lstinputlisting[language=Python]{upload_img_post.py}
+    }%
+}
 The raspberry pi is 
 
 \section{Difficulties and Challenges}
