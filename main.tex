@@ -26,6 +26,8 @@
 }
 
 \maketitle
+\thispagestyle{plain}
+\pagestyle{plain}
 \tableofcontents
 \newpage
 
@@ -59,7 +61,9 @@ In the past several months, several organizations, for example Didi Chuxing\foot
 % Computer vision for mask detection
 % Computer vision for identifying mask type
 \subsection{Our Solution}
-Maskit 
+Maskit consists of two parts: a Raspberry Pi and a server. We connect a Pi Camera onto the Raspberry Pi such that the Raspberry Pi would be able to take periodic photos. The Raspberry Pi then sends these images to the server via a POST request.
+The server then runs the mask detection model on the incoming image and for each face that it identifies, classifies the face as with mask or without mask. These classifications are sent back to the Raspberry Pi as the response to the POST request.
+After the Raspberry Pi receives these classifications, if and only if all faces identified wear a mask, then it will activate the servo to open access. In our prototype, we model this situation by raising a welcome flag, though this can be generalized to opening store front doors, for example.
 %Google search revealed trained Tensorflow models that recognized human faces. Hans had experience with TF. Allen had experience working with R Pis and servo controls blabla. Combined forces to bring this product together.
 %They've come up with prototype that consists of a Rpi and a server. The Rpi is connected to Camera module and servo. It takes pictures at intervals and sends to server as POST request. Server processes pictures with TF model and identifies human faces as masked or unmasked. Then, sends this as response to POST request. If all people identified are wearing a mask, then the raspberry pi activates a welcome flag. Else, people denied entry.
 %In model, we have welcome flag, but this can be generalized to any motor, e.g. sliding doors at supermarkets, bolts for regular doors, etc.

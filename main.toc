@@ -8,7 +8,7 @@
 \contentsline {subsection}{\numberline {\mbox {III-A}}Setting up the server}{3}{subsection.3.1}%
 \contentsline {subsection}{\numberline {\mbox {III-B}}Running it on R Pi}{3}{subsection.3.2}%
 \contentsline {section}{\numberline {IV}Difficulties and Challenges}{4}{section.4}%
-\contentsline {section}{\numberline {V}Market Evaluation}{4}{section.5}%
-\contentsline {section}{\numberline {VI}Suggested Improvements}{4}{section.6}%
+\contentsline {section}{\numberline {V}Market Evaluation}{5}{section.5}%
+\contentsline {section}{\numberline {VI}Suggested Improvements}{5}{section.6}%
 \contentsline {section}{\numberline {VII}Conclusion}{5}{section.7}%
 \contentsline {section}{References}{5}{section*.3}%
