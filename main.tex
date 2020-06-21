@@ -76,7 +76,7 @@ After the Raspberry Pi receives these classifications, if and only if all faces 
 We used a Raspberry Pi Model B (700-MHz processor, 512 MB RAM). The physical limitations of this Raspberry Pi version are discussed later. In addition to the Raspberry Pi and its regular accessories, i.e. keyboard, power input, etc., we used:
 \begin{enumerate}
 \item HiTEC HS-5625MG servo \footnote{\url{https://hitecrcd.com/products/servos/sport-servos/digital-sport-servos/hs-5625mg/product}}
-\item Pi Camera module (for setup instructions, see \footnote{\url{https://www.raspberrypi.org/documentation/usage/camera/}}
+\item Pi Camera module \footnote{for setup instructions, see \url{https://www.raspberrypi.org/documentation/usage/camera/}}
 \item 6 Volt DC input source. In our case, we put 4 AA batteries into a 9 volt battery case and used aligator clips to join the two empty battery terminals.
 \item a breadboard (optional but makes setup nicer)
 \end{enumerate}
@@ -143,8 +143,12 @@ Total                      & \$85-125
 \subsection{During a Pandemic, Mask Wearing Enforcement is Essential}
 The conception for Maskit came actually we watched news reports of customers refusing to wear masks and store employees' safety threatened when forced to deal with these customers \footnote{\url{https://www.youtube.com/watch?v=O8fkVqEZGRA}} and we wondered how we could automatically prevent such unruly customers from entering businesses. Just like how sliding doors at many supermarkets only open when motion detectors are activated, we reasoned that it would be interesting to explore an add-on to this concept, one that integrated facial recognition to open only when the customer wears a mask. 
 \section{Suggested Improvements}
-MaskIt needs to be fully evaluated in larger public situations. If it is going to be useful in public places. It would also be useful to be able to do image processing on the raspberry-pi which was not possible because of the size of the Tensorflow and openCV libraries.
-Or the hardware can be made much more streamlined and small and all the image processing can be done on a cloud server instead of a our homemade desktop server. Mas detection can also be done along with other measures to acquire data on the corona-virus including temperature detection and hear rate detection which can be done accurately with only video sources\footnote{\url{https://web.stanford.edu/class/cs231a/prev_projects_2016/finalReport.pdf}}.
+\subsection{Additional Features in Public Spaces}
+MaskIt needs to be fully evaluated in larger public situations to determine its utility in public spaces. More importantly, we need to implement overrides in case Maskit misidentifies customers with masks as not having a mask. Customers need a contactless way to dispute misidentification. We propose some sort of foot pedal that connects to the Raspberry Pi that the customer can use to dispute a classification. A store attendant on the server side can then make the decision and override Maskit.
+\subsection{Image Recognition and Processing on Raspberry Pi}
+It would also be useful to be able to do image processing on the raspberry-pi which was not possible because of the size of the Tensorflow and openCV libraries.
+\subsection{Image Recognition and Processing on the Cloud}
+Or the hardware can be made much more streamlined and small and all the image processing can be done on a cloud server instead of a our homemade desktop server. Mas detection can also be done along with other measures to acquire data on the corona-virus including temperature detection and heart rate detection which can be done accurately with only video sources\footnote{\url{https://web.stanford.edu/class/cs231a/prev_projects_2016/finalReport.pdf}}.
 
 
 \section{Conclusion}
