@@ -22,5 +22,5 @@
 \contentsline {subsection}{\numberline {\mbox {VI-A}}Additional Features in Public Spaces}{7}{subsection.6.1}%
 \contentsline {subsection}{\numberline {\mbox {VI-B}}Image Recognition and Processing on Raspberry Pi}{7}{subsection.6.2}%
 \contentsline {subsection}{\numberline {\mbox {VI-C}}Image Recognition and Processing on the Cloud}{7}{subsection.6.3}%
-\contentsline {section}{\numberline {VII}Conclusion}{7}{section.7}%
+\contentsline {section}{\numberline {VII}Conclusion}{8}{section.7}%
 \contentsline {section}{References}{8}{section*.5}%

@@ -48,12 +48,13 @@ Our work is found at \url{https://github.com/hansgundlach/FaceMaskDetectionRasPi
 \caption{The team: Allen to the left, Hans to the right}
 \end{figure}
 % insert personal bios and anecdotes here:
+\subsubsection{Allen}
 We are both undergraduate students at the University of California, Berkeley. Allen is a Computer Science major who is primarily interested in Natural Language Processing
 % Allen is CS major at UCB and Hans is math + physics. They met at International House. Little did they know that semester would be so abruptly cut off by a pandemic. (Detail brutal dining conditions at I house.) Shock and horror at news coming in about so much death.
 % Video of Costco customer refusing to wear a mask. Customers like this are selfish and endanger other people's safety. Even worse, store employees have to personally go escort the person out--who knows how many people this person could infect in that time period? Better, have a computer analyze people automatically: computers can't get infected with COVID and now store employees aren't putting their lives at risk thanks to selfish bass turds.
 % This inspired us to think about creating such a system. 
 \subsection{Previous Work on Mask Identification with Computer Vision}
-In the past several months, several organizations, for example Didi Chuxing\footnote{https://github.com/didi/maskdetection} and AI Zoo Tech\footnote{https://github.com/AIZOOTech/FaceMaskDetection} have released open-source pre-trained neural network models on multiple platforms (Keras, Tensorflow, and Caffe) that classify faces within a photo or video as mask-wearing or not. Both models perform spectacularly as the Didi model was trained on a dataset of over 200,000 faces while the AIZOO model consists of 24 convolutional layers trained on approximately 8000 images from WIDER Face and MAFA datasets. Accordingly, the Didi model achieves at least 98\% accuracy and the AIZoo model has a 0.896 ROC AUC (\textit{receiver operating characteristic area under the curve}) for face detection and 0.919 ROC AUC for face mask detection, as seen in their curve below.
+In the past several months, several organizations, for example Didi Chuxing\footnote{https://github.com/didi/maskdetection} and AI Zoo Tech\footnote{https://github.com/AIZOOTech/FaceMaskDetection} have released open-source pre-trained neural network models on multiple platforms (Keras, Tensorflow, and Caffe) that classify faces within a photo or video as mask-wearing or not. Both models perform spectacularly as the Didi model was trained on a dataset of over 200,000 faces while the AIZoo model consists of 24 convolutional layers trained on approximately 8000 images from WIDER Face and MAFA datasets. Accordingly, the Didi model achieves at least 98\% accuracy and the AIZoo model has a 0.896 ROC AUC (\textit{receiver operating characteristic area under the curve}) for face detection and 0.919 ROC AUC for face mask detection, as seen in their curve below.
 \begin{center}
 \includegraphics[scale=.5]{pr_curve}
 \end{center}
@@ -146,9 +147,9 @@ The conception for Maskit came actually we watched news reports of customers ref
 \subsection{Additional Features in Public Spaces}
 MaskIt needs to be fully evaluated in larger public situations to determine its utility in public spaces. More importantly, we need to implement overrides in case Maskit misidentifies customers with masks as not having a mask. Customers need a contactless way to dispute misidentification. We propose some sort of foot pedal that connects to the Raspberry Pi that the customer can use to dispute a classification. A store attendant on the server side can then make the decision and override Maskit.
 \subsection{Image Recognition and Processing on Raspberry Pi}
-It would also be useful to be able to do image processing on the raspberry-pi which was not possible because of the size of the Tensorflow and openCV libraries.
+We hope to invest in newer Raspberry Pis and explore whether it is possible to run the models within the Raspberry Pi alone with comparable efficiency. This form would significantly reduce costs as customers would no longer have to rely on servers.
 \subsection{Image Recognition and Processing on the Cloud}
-Or the hardware can be made much more streamlined and small and all the image processing can be done on a cloud server instead of a our homemade desktop server. Mas detection can also be done along with other measures to acquire data on the corona-virus including temperature detection and heart rate detection which can be done accurately with only video sources\footnote{\url{https://web.stanford.edu/class/cs231a/prev_projects_2016/finalReport.pdf}}.
+Or the hardware can be made much more streamlined and small and all the image processing can be done on a cloud server instead of a our homemade desktop server. Mask detection can also be done along with other measures to acquire data on COVID-19 symptoms, including temperature detection and heart rate detection. This measurements are effective with just video sources\footnote{\url{https://web.stanford.edu/class/cs231a/prev_projects_2016/finalReport.pdf}}.
 
 
 \section{Conclusion}
