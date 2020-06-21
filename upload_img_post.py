@@ -6,7 +6,7 @@ import wiringpi
 from io import BytesIO
 from time import sleep
 from picamera import PiCamera
-url = 'http://192.168.0.31:8000'
+url = 'http://192.168.0.31:8000' # replace with actual IP address
 wiringpi.wiringPiSetupGpio()
 wiringpi.pinMode(18, wiringpi.GPIO.PWM_OUTPUT)
 wiringpi.pwmSetMode(wiringpi.GPIO.PWM_MODE_MS)

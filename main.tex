@@ -103,15 +103,45 @@ See below for the Raspberry Pi pinout\footnote{Diagram by \url{https://pinout.xy
 \end{enumerate}
 
 \subsection{Running it on R Pi}
-
-\subsubsection{Software Setup}
+To identify the server, the Raspberry Pi must know the server's IP address. In the source  below, the IP address from aboved must be replaced into line 9 below (\texttt{upload\_img\_post.py}).
 \lstinputlisting[language=Python]{upload_img_post.py}
-The raspberry pi is 
+After installing other prerequisites (e.g. the \texttt{requests} library\footnote{\url{https://requests.readthedocs.io/en/master/}}), run the client on the Raspberry Pi with the command \texttt{python upload\_img\_post.py}. As the program is currently, the Raspberry Pi takes two images with 5 seconds in between. To adjust this frequency, modify line 22. For perpetual monitoring, it is permissble to add an infinite loop, e.g. \texttt{while True}.
+
+\subsection{A Preview}
+We explain a frame from our demonstration video below. The monitor to the left is connected to the Raspberry Pi while the monitor to the right is connected to the desktop. We are displaying video for demonstration purposes; in widescale implementation, both the server and the Raspberry Pi could both be command-line only, i.e. without X-windows. As we see, the server has identified Allen's face as masked and the Raspberry Pi servo has responded accordingly by raising the flag.
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=.5]{cropped}
+\captionsetup{labelformat=empty}
+\caption{Allen's mask recognized}
+\end{figure}
 
 \section{Difficulties and Challenges}
-We faced many challenges during the completion of the project. We tried to do all the image processing on the raspberry pi however the pi, unfortunately, did not have either the necessary speed or space to handle the complicated image processing in OpenCV and Tensorflow. Therefore, we had to design an HTTP server using python to send the image to a Linux computer where the image is processed. Finding the right model for mask detection was also difficult. We tried several different frameworks before finding an efficient Tensorflow mask detection model from AIZOO. Remote work also proved difficult especially for a hardware project where only one of us could see the immediate results.
+\subsection{Getting Models to Work}
+This project was an excellent learning experience for us to learn how to load trained models and use them for interesting applications. We were very fortunate to have found the models by AIZoo (\footnote{\url{https://github.com/AIZOOTech/FaceMaskDetection}}) as these models were not only more or less ready out of the box, but were available on through give of the mainstream deep learning frameworks: PyTorch, TensorFlow, Keras, MXNet, and Caffe. They were in fact not our original attempts as we had initally unsuccessfully tried to compile Didi's models \footnote{\url{https://github.com/didi/maskdetection}}. After that failed, Allen tried to translate some of the C++ code into Python for a better understanding of what was going on, but the short timeline of Hackathons meant that we explored other options and we thus came upon AIZoo's contribution. 
+\subsection{Hardware Limitations}
+As was mentioned previously, the Raspberry Pi we used is not the latest piece of technology as it contains merely a 700-MHz processor and 512 MB RAM. As such, setup on the Raspberry Pi was time-consuming. Initially, we had ambitions of facial recognition on the Raspberry Pi itself, but this became impossible as loading tensorflow itself would take almost an entire minute; this process would be more of a hindrance to the general public than any help. As such, we devised the server-client system that we have described thus far.
+
+That said, we would be interested in continuing this project with a newer version of the Raspberry Pi, an improvement that would likely significantly boost current performance and perhaps even allow for mask recognition on the Raspberry Pi itself. We discuss these benefits more in depth later.
+\subsection{Remote Work}
+It goes without saying that work on such a hardware-oriented project is difficult when one teammate lives in Fremont, California and the other in Seattle, Washington. However, now that we have created a working prototype, we are even more proud to have overcome this additional hurdle.
 \section{Market Evaluation}
-MaskIt has several market application. MaskIt could be used as an artificial bouncing mechanism to ensure that people use masks in public places. Large scale mask detection could also be useful in epidemiological and policy research. 
+\subsection{Cost Analysis}
+As the Raspberry Pi is famous for being a low cost computer, our calculations show that our Raspberry Pi setup can cost even less than \$100, depending on servo quality, a very attractive price to business owners. Prices may be even lower when purchasing from sites such as eBay. Refer to the table below for the cost breakdown:
+\begin{table}[h!]
+\centering
+\begin{tabular}{l|l}
+\hline
+\multicolumn{1}{|l|}{Item} & \multicolumn{1}{l|}{Cost} \\ \hline
+Raspberry Pi               & \$35\footnote{\url{https://www.raspberrypi.org/products/raspberry-pi-4-model-b/}}                      \\
+Pi Camera                  & \$29.95\footnote{\url{https://www.adafruit.com/product/3099}}                  \\
+Servo                      & \$10-50\footnote{\url{https://www.servocity.com/servos/hitec-servos}}             \\
+Batteries and Wiring       & \$10                \\ \hline
+Total                      & \$85-125           
+\end{tabular}
+\end{table}
+\subsection{During a Pandemic, Mask Wearing Enforcement is Essential}
+The conception for Maskit came actually we watched news reports of customers refusing to wear masks and store employees' safety threatened when forced to deal with these customers \footnote{\url{https://www.youtube.com/watch?v=O8fkVqEZGRA}} and we wondered how we could automatically prevent such unruly customers from entering businesses. Just like how sliding doors at many supermarkets only open when motion detectors are activated, we reasoned that it would be interesting to explore an add-on to this concept, one that integrated facial recognition to open only when the customer wears a mask. 
 \section{Suggested Improvements}
 MaskIt needs to be fully evaluated in larger public situations. If it is going to be useful in public places 
 \section{Conclusion}
