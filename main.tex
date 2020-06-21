@@ -8,6 +8,7 @@
 \lstset{
   basicstyle=\ttfamily,
   columns=fullflexible,
+  numbers=left,
   frame=single,
   breaklines=true,
   postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space},
@@ -52,7 +53,7 @@ We are both undergraduate students at the University of California, Berkeley. Al
 % Video of Costco customer refusing to wear a mask. Customers like this are selfish and endanger other people's safety. Even worse, store employees have to personally go escort the person out--who knows how many people this person could infect in that time period? Better, have a computer analyze people automatically: computers can't get infected with COVID and now store employees aren't putting their lives at risk thanks to selfish bass turds.
 % This inspired us to think about creating such a system. 
 \subsection{Previous Work on Mask Identification with Computer Vision}
-In the past several months, several organizations, for example Didi Chuxing\footnote{https://github.com/didi/maskdetection} and AI Zoo Tech\footnote{https://github.com/AIZOOTech/FaceMaskDetection} have released open-source pre-trained neural network models on multiple platforms (Keras, Tensorflow, and Caffe) that classify faces within a photo or video as mask-wearing or not. Both models perform spectacularly as the Didi model was trained on a dataset of over 200,000 faces while the AIZOO model consists of 24 convolutional layers trained on approximately 8000 images from WIDER Face and MAFA datasets. Accordingly, the Didi model achieves at least 98\% accuracy and the AIZoo model has a 0.896 ROC AUC (\textit{receiver operating characteristic area under the curve} for face detection and 0.919 ROC AUC for face mask detection, as seen in their curve below.
+In the past several months, several organizations, for example Didi Chuxing\footnote{https://github.com/didi/maskdetection} and AI Zoo Tech\footnote{https://github.com/AIZOOTech/FaceMaskDetection} have released open-source pre-trained neural network models on multiple platforms (Keras, Tensorflow, and Caffe) that classify faces within a photo or video as mask-wearing or not. Both models perform spectacularly as the Didi model was trained on a dataset of over 200,000 faces while the AIZOO model consists of 24 convolutional layers trained on approximately 8000 images from WIDER Face and MAFA datasets. Accordingly, the Didi model achieves at least 98\% accuracy and the AIZoo model has a 0.896 ROC AUC (\textit{receiver operating characteristic area under the curve}) for face detection and 0.919 ROC AUC for face mask detection, as seen in their curve below.
 \begin{center}
 \includegraphics[scale=.5]{pr_curve}
 \end{center}
@@ -70,9 +71,40 @@ After the Raspberry Pi receives these classifications, if and only if all faces 
 
 
 \section{Step by Step Usage Instructions}
+\subsection{Raspberry Pi Prerequisites}
+\subsubsection{Materials}
+We used a Raspberry Pi Model B (700-MHz processor, 512 MB RAM). The physical limitations of this Raspberry Pi version are discussed later. In addition to the Raspberry Pi and its regular accessories, i.e. keyboard, power input, etc., we used:
+\begin{enumerate}
+\item HiTEC HS-5625MG servo \footnote{\url{https://hitecrcd.com/products/servos/sport-servos/digital-sport-servos/hs-5625mg/product}}
+\item Pi Camera module (for setup instructions, see \footnote{\url{https://www.raspberrypi.org/documentation/usage/camera/}}
+\item 6 Volt DC input source. In our case, we put 4 AA batteries into a 9 volt battery case and used aligator clips to join the two empty battery terminals.
+\item a breadboard (optional but makes setup nicer)
+\end{enumerate}
+Our setup should work on the latest version of Raspberry Pi OS (formerly known as \textit{Raspbian}). We will not go in depth on the Raspberry Pi settings on how to enable the Pi Camera or GPIO interfacing (i.e. \texttt{sudo raspi-config}, then enable both GPIO access and camera module), but links are provided in footnotes\footnote{\url{https://www.raspberrypi.org/documentation/configuration/camera.md}}\footnote{\url{https://pimylifeup.com/raspberry-pi-gpio/}}. 
+
+We installed the \texttt{picamera} and \texttt{wiringpi} with \texttt{python pip} for camera and GPIO pin interfacing, respectively, in Python.
+
+In the next section, we describe how to connect the servo to the Raspberry Pi.
+\subsubsection{GPIO configuration}
+We use the Raspberry Pi's GPIO pins to control the servo. However, the servo cannot draw too much current from the Raspberry Pi without breaking it. As a result, the red servo wire must be connected directly to the 6 volt $V_{in}$. The black servo wire is connected to the ground. Make sure that the Raspberry Pi ground pin is also connected to this ground. The yellow wire is connected to PWM0 (\textit{pulse-width modulation 0}), or physical pin 12\footnote{See \url{https://pinout.xyz/} for Raspberry Pi pin information}.
+
+See below for the Raspberry Pi pinout\footnote{Diagram by \url{https://pinout.xyz/}}:
+\begin{center}
+\includegraphics[scale=.5]{raspberry-pi-pinout}
+\end{center}
+
 \subsection{Setting up the server}
+\begin{enumerate}
+\item Install the dependencies found in the \texttt{environment.yml} file\footnote{https://github.com/hansgundlach/FaceMaskDetectionRasPi/blob/master/environment.yml}.
+\item On terminal, run \texttt{conda activate maskdetect} to load the environment.
+\item Run \texttt{python simple\_server.py}. The server will be hosted on port 8000.
+\item The server will now be listening for POST requests.
+\item Run \texttt{hostname -I} to get host IP Address. We will need this value in the next step.
+\end{enumerate}
 
 \subsection{Running it on R Pi}
+
+\subsubsection{Software Setup}
 \lstinputlisting[language=Python]{upload_img_post.py}
 The raspberry pi is 
 

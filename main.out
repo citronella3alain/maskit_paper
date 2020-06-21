@@ -5,10 +5,14 @@
 \BOOKMARK [2][-]{subsection.2.2}{Previous Work on Mask Identification with Computer Vision}{section.2}% 5
 \BOOKMARK [2][-]{subsection.2.3}{Our Solution}{section.2}% 6
 \BOOKMARK [1][-]{section.3}{Step by Step Usage Instructions}{}% 7
-\BOOKMARK [2][-]{subsection.3.1}{Setting up the server}{section.3}% 8
-\BOOKMARK [2][-]{subsection.3.2}{Running it on R Pi}{section.3}% 9
-\BOOKMARK [1][-]{section.4}{Difficulties and Challenges}{}% 10
-\BOOKMARK [1][-]{section.5}{Market Evaluation}{}% 11
-\BOOKMARK [1][-]{section.6}{Suggested Improvements}{}% 12
-\BOOKMARK [1][-]{section.7}{Conclusion}{}% 13
-\BOOKMARK [1][-]{section*.3}{References}{}% 14
+\BOOKMARK [2][-]{subsection.3.1}{Raspberry Pi Prerequisites}{section.3}% 8
+\BOOKMARK [3][-]{subsubsection.3.1.1}{Materials}{subsection.3.1}% 9
+\BOOKMARK [3][-]{subsubsection.3.1.2}{GPIO configuration}{subsection.3.1}% 10
+\BOOKMARK [2][-]{subsection.3.2}{Setting up the server}{section.3}% 11
+\BOOKMARK [2][-]{subsection.3.3}{Running it on R Pi}{section.3}% 12
+\BOOKMARK [3][-]{lstlisting.-1}{Software Setup}{subsection.3.3}% 13
+\BOOKMARK [1][-]{section.4}{Difficulties and Challenges}{}% 14
+\BOOKMARK [1][-]{section.5}{Market Evaluation}{}% 15
+\BOOKMARK [1][-]{section.6}{Suggested Improvements}{}% 16
+\BOOKMARK [1][-]{section.7}{Conclusion}{}% 17
+\BOOKMARK [1][-]{section*.3}{References}{}% 18
