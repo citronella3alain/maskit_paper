@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.6.6)  21 JUN 2020 14:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.6.6)  21 JUN 2020 14:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -434,10 +434,10 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 38.
+(Font)              <9> on input line 36.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 38.
-<mao.jpg, id=148, 687.56876pt x 916.42375pt>
+(Font)              <5> on input line 36.
+<mao.jpg, id=165, 687.56876pt x 916.42375pt>
 File: mao.jpg Graphic file (type jpg)
 <use mao.jpg>
 Package pdftex.def Info: mao.jpg  used on input line 44.
@@ -447,13 +447,13 @@ File: mao.jpg Graphic file (type jpg)
 Package pdftex.def Info: mao.jpg  used on input line 45.
 (pdftex.def)             Requested size: 171.89177pt x 229.10538pt.
  [2 <./mao.jpg>]
-<pr_curve.png, id=160, 578.16pt x 433.62pt>
+<pr_curve.png, id=183, 578.16pt x 433.62pt>
 File: pr_curve.png Graphic file (type png)
 <use pr_curve.png>
 Package pdftex.def Info: pr_curve.png  used on input line 58.
 (pdftex.def)             Requested size: 289.07928pt x 216.80946pt.
  [3 <./pr_curve.png>]
-<raspberry-pi-pinout.png, id=186, 1003.75pt x 312.16624pt>
+<raspberry-pi-pinout.png, id=206, 1003.75pt x 312.16624pt>
 File: raspberry-pi-pinout.png Graphic file (type png)
 <use raspberry-pi-pinout.png>
 Package pdftex.def Info: raspberry-pi-pinout.png  used on input line 93.
@@ -465,7 +465,7 @@ File: lstlang1.sty 2019/09/10 1.8c listings language file
 LaTeX Font Info:    Font shape `OT1/pcr/m/it' in size <12> not available
 (Font)              Font shape `OT1/pcr/m/sl' tried instead on input line 1.
  [4 <./raspberry-pi-pinout.png (PNG copy)>])
-<cropped.png, id=215, 417.56pt x 264.99pt>
+<cropped.png, id=235, 417.56pt x 264.99pt>
 File: cropped.png Graphic file (type png)
 <use cropped.png>
 Package pdftex.def Info: cropped.png  used on input line 114.
@@ -496,24 +496,24 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 161.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 161.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 161.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 3D78527B3DF3B9A2F0E26BB8607D91FC;1797.
+(rerunfilecheck)             Checksum: CF61E8C0402BBA32F83B4ABB5230FF67;1926.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 161.
  ) 
 Here is how much of TeX's memory you used:
- 9638 strings out of 483140
- 148942 string characters out of 5965152
- 685214 words of memory out of 5000000
- 24411 multiletter control sequences out of 15000+600000
- 567659 words of font info for 90 fonts, out of 8000000 for 9000
+ 9651 strings out of 483140
+ 149172 string characters out of 5965152
+ 688632 words of memory out of 5000000
+ 24416 multiletter control sequences out of 15000+600000
+ 568795 words of font info for 91 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 41i,17n,42p,1260b,2037s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{Hfootnote.16} has been referenced but does not ex
+ 41i,17n,42p,1568b,2037s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{Hfootnote.18} has been referenced but does not ex
 ist, replaced by a fixed one
 
-pdfTeX warning (dest): name{Hfootnote.15} has been referenced but does not exis
+pdfTeX warning (dest): name{Hfootnote.17} has been referenced but does not exis
 t, replaced by a fixed one
 
-pdfTeX warning (dest): name{Hfootnote.14} has been referenced but does not exis
+pdfTeX warning (dest): name{Hfootnote.16} has been referenced but does not exis
 t, replaced by a fixed one
 
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/
@@ -524,10 +524,10 @@ nts/type1/urw/courier/ucrb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw
 o8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/s
 hare/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (8 pages, 619324 bytes).
+Output written on main.pdf (8 pages, 622480 bytes).
 PDF statistics:
- 349 PDF objects out of 1000 (max. 8388607)
- 319 compressed objects within 4 object streams
- 109 named destinations out of 1000 (max. 500000)
- 229 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 372 PDF objects out of 1000 (max. 8388607)
+ 342 compressed objects within 4 object streams
+ 116 named destinations out of 1000 (max. 500000)
+ 245 words of extra memory for PDF output out of 10000 (max. 10000000)
 

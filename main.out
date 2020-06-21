@@ -2,25 +2,27 @@
 \BOOKMARK [2][-]{subsection.1.1}{Code Source}{section.1}% 2
 \BOOKMARK [1][-]{section.2}{Purpose \046 Motivation}{}% 3
 \BOOKMARK [2][-]{subsection.2.1}{Meet the Team}{section.2}% 4
-\BOOKMARK [2][-]{subsection.2.2}{Previous Work on Mask Identification with Computer Vision}{section.2}% 5
-\BOOKMARK [2][-]{subsection.2.3}{Our Solution}{section.2}% 6
-\BOOKMARK [1][-]{section.3}{Step by Step Usage Instructions}{}% 7
-\BOOKMARK [2][-]{subsection.3.1}{Raspberry Pi Prerequisites}{section.3}% 8
-\BOOKMARK [3][-]{subsubsection.3.1.1}{Materials}{subsection.3.1}% 9
-\BOOKMARK [3][-]{subsubsection.3.1.2}{GPIO configuration}{subsection.3.1}% 10
-\BOOKMARK [2][-]{subsection.3.2}{Setting up the server}{section.3}% 11
-\BOOKMARK [2][-]{subsection.3.3}{Running it on R Pi}{section.3}% 12
-\BOOKMARK [2][-]{subsection.3.4}{A Preview}{section.3}% 13
-\BOOKMARK [1][-]{section.4}{Difficulties and Challenges}{}% 14
-\BOOKMARK [2][-]{subsection.4.1}{Getting Models to Work}{section.4}% 15
-\BOOKMARK [2][-]{subsection.4.2}{Hardware Limitations}{section.4}% 16
-\BOOKMARK [2][-]{subsection.4.3}{Remote Work}{section.4}% 17
-\BOOKMARK [1][-]{section.5}{Market Evaluation}{}% 18
-\BOOKMARK [2][-]{subsection.5.1}{Cost Analysis}{section.5}% 19
-\BOOKMARK [2][-]{subsection.5.2}{During a Pandemic, Mask Wearing Enforcement is Essential}{section.5}% 20
-\BOOKMARK [1][-]{section.6}{Suggested Improvements}{}% 21
-\BOOKMARK [2][-]{subsection.6.1}{Additional Features in Public Spaces}{section.6}% 22
-\BOOKMARK [2][-]{subsection.6.2}{Image Recognition and Processing on Raspberry Pi}{section.6}% 23
-\BOOKMARK [2][-]{subsection.6.3}{Image Recognition and Processing on the Cloud}{section.6}% 24
-\BOOKMARK [1][-]{section.7}{Conclusion}{}% 25
-\BOOKMARK [1][-]{section*.5}{References}{}% 26
+\BOOKMARK [3][-]{subsubsection.2.1.1}{Allen}{subsection.2.1}% 5
+\BOOKMARK [3][-]{subsubsection.2.1.2}{Hans}{subsection.2.1}% 6
+\BOOKMARK [2][-]{subsection.2.2}{Previous Work on Mask Identification with Computer Vision}{section.2}% 7
+\BOOKMARK [2][-]{subsection.2.3}{Our Solution}{section.2}% 8
+\BOOKMARK [1][-]{section.3}{Step by Step Usage Instructions}{}% 9
+\BOOKMARK [2][-]{subsection.3.1}{Raspberry Pi Prerequisites}{section.3}% 10
+\BOOKMARK [3][-]{subsubsection.3.1.1}{Materials}{subsection.3.1}% 11
+\BOOKMARK [3][-]{subsubsection.3.1.2}{GPIO configuration}{subsection.3.1}% 12
+\BOOKMARK [2][-]{subsection.3.2}{Setting up the server}{section.3}% 13
+\BOOKMARK [2][-]{subsection.3.3}{Running it on R Pi}{section.3}% 14
+\BOOKMARK [2][-]{subsection.3.4}{A Preview}{section.3}% 15
+\BOOKMARK [1][-]{section.4}{Difficulties and Challenges}{}% 16
+\BOOKMARK [2][-]{subsection.4.1}{Getting Models to Work}{section.4}% 17
+\BOOKMARK [2][-]{subsection.4.2}{Hardware Limitations}{section.4}% 18
+\BOOKMARK [2][-]{subsection.4.3}{Remote Work}{section.4}% 19
+\BOOKMARK [1][-]{section.5}{Market Evaluation}{}% 20
+\BOOKMARK [2][-]{subsection.5.1}{Cost Analysis}{section.5}% 21
+\BOOKMARK [2][-]{subsection.5.2}{During a Pandemic, Mask Wearing Enforcement is Essential}{section.5}% 22
+\BOOKMARK [1][-]{section.6}{Suggested Improvements}{}% 23
+\BOOKMARK [2][-]{subsection.6.1}{Additional Features in Public Spaces}{section.6}% 24
+\BOOKMARK [2][-]{subsection.6.2}{Image Recognition and Processing on Raspberry Pi}{section.6}% 25
+\BOOKMARK [2][-]{subsection.6.3}{Image Recognition and Processing on the Cloud}{section.6}% 26
+\BOOKMARK [1][-]{section.7}{Conclusion}{}% 27
+\BOOKMARK [1][-]{section*.5}{References}{}% 28

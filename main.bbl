@@ -1,13 +1,25 @@
 \begin{thebibliography}{1}
 
+\bibitem{fink2020worst}
+S.~Fink, ``Worst-case estimates for us coronavirus deaths,'' {\em New York
+  Times}, 2020.
+
+\bibitem{fernandes2020economic}
+N.~Fernandes, ``Economic effects of coronavirus outbreak (covid-19) on the
+  world economy,'' {\em Available at SSRN 3557504}, 2020.
+
+\bibitem{viner2020school}
+R.~M. Viner, S.~J. Russell, H.~Croker, J.~Packer, J.~Ward, C.~Stansfield,
+  O.~Mytton, C.~Bonell, and R.~Booy, ``School closure and management practices
+  during coronavirus outbreaks including covid-19: a rapid systematic review,''
+  {\em The Lancet Child \& Adolescent Health}, 2020.
+
 \bibitem{brandon_2020}
-John Brandon.
-\newblock A doctor explains why 45% of all americans refuse to wear a
-  protective mask, May 2020.
+J.~Brandon, ``A doctor explains why 45% of all americans refuse to wear a
+  protective mask,'' May 2020.
 
 \bibitem{vigdor_2020}
-Neil Vigdor.
-\newblock American airlines bans conservative activist who refused to wear a
-  mask, Jun 2020.
+N.~Vigdor, ``American airlines bans conservative activist who refused to wear a
+  mask,'' Jun 2020.
 
 \end{thebibliography}

@@ -2,6 +2,8 @@
 \contentsline {subsection}{\numberline {\mbox {I-A}}Code Source}{2}{subsection.1.1}%
 \contentsline {section}{\numberline {II}Purpose \& Motivation}{2}{section.2}%
 \contentsline {subsection}{\numberline {\mbox {II-A}}Meet the Team}{2}{subsection.2.1}%
+\contentsline {subsubsection}{\numberline {\mbox {II-A}1}Allen}{2}{subsubsection.2.1.1}%
+\contentsline {subsubsection}{\numberline {\mbox {II-A}2}Hans}{3}{subsubsection.2.1.2}%
 \contentsline {subsection}{\numberline {\mbox {II-B}}Previous Work on Mask Identification with Computer Vision}{3}{subsection.2.2}%
 \contentsline {subsection}{\numberline {\mbox {II-C}}Our Solution}{3}{subsection.2.3}%
 \contentsline {section}{\numberline {III}Step by Step Usage Instructions}{3}{section.3}%
